@@ -1,0 +1,160 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --circle-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --button-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --glass-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+  --bg-purple: #4d7f96;
+  --bg-offwhite: #f1f1f1;
+  --grey: #969696;
+  --light-grey: #bebebe;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("./img/bg.jpg");
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.glass__container {
+  width: 400px;
+  padding: 30px;
+  background: rgba(170, 170, 170, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(170, 170, 170, 0.3);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input label {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.input select {
+  border: none;
+  border-radius: 8px;
+  min-width: 300px;
+  font-size: 16px;
+  padding: 8px 4px;
+  background-color: var(--bg-purple);
+  color: white;
+}
+
+.input select:focus {
+  outline: none;
+}
+
+.list__item {
+  font-size: 12px;
+  color: var(--light-grey);
+}
+
+.circle__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.circle__outline {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 15px solid #f1f1f1;
+  box-shadow: var(--circle-shadow);
+}
+
+.circle__progress {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: var(--bg-purple);
+  box-shadow: var(--circle-shadow);
+  border-radius: 50%;
+  transition: 4s ease all;
+}
+
+.circle__grow {
+  transform: scale(5.38);
+}
+
+.breaths {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 25px;
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: var(--bg-purple);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.35s ease all;
+  box-shadow: var(--button-shadow);
+  display: flex;
+}
+
+button:hover {
+  background: var(--bg-offwhite);
+  color: var(--bg-purple);
+}
+
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__inactive {
+  pointer-events: none;
+  background-color: var(--grey);
+}

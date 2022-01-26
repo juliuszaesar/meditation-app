@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Du förtjänar en paus!</title>
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png">
+  </head>
+  <body>
+    <!--=============== TITLE ===============-->
+    <p class="title">4-4-4 Box Breathing</p>
+    <!--=============== BREATH INPUT ===============-->
+    <div class="glass__container">
+      <div class="input">
+        <label>Välj antal andetag</label>
+        <select class="breath__input">
+          <option value="3">3 andetag</option>
+          <option value="5">5 andetag</option>
+          <option value="7">7 andetag</option>
+        </select>
+      </div>
+      <!--=============== CIRCLES ===============-->
+      <div class="circle__wrap">
+        <div class="circle__outline"></div>
+        <div class="circle__progress"></div>
+      </div>
+      <!--=============== INSTRUCTIONS ===============-->
+      <p class="instructions">Redo att börja andas?</p>
+      <p class="breaths">
+        Återstående andetag:
+        <span class="breaths__text">3</span>
+      </p>
+      <div class="button__wrapper">
+        <button class="start">Starta</button>
+      </div>
+    </div>
+    <!--=============== INSTRUCTION INFO TEXT ===============-->
+    <ul>
+      <li class="list__item">Andas in under 4 sekunder (genom näsan)</li>
+      <li class="list__item">Håll andan under 4 sekunder</li>
+      <li class="list__item">Andas ut under 4 sekunder (genom munnen)</li>
+    </ul>
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="/app.js"></script>
+  </body>
+</html>
