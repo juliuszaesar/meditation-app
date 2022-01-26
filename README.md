@@ -5,6 +5,6 @@ Technologies used:
 - ScrollReveal
 ------------
 SITE DEPLOYED HERE: https://box-meditation.netlify.app/
-
 ------------
+
 
