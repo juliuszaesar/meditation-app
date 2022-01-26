@@ -7,7 +7,7 @@
   --button-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --glass-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-  --bg-purple: #4d7f96;
+  --bg-blue: #4d7f96;
   --bg-offwhite: #f1f1f1;
   --grey: #969696;
   --light-grey: #bebebe;
@@ -75,7 +75,7 @@ body::after {
   min-width: 300px;
   font-size: 16px;
   padding: 8px 4px;
-  background-color: var(--bg-purple);
+  background-color: var(--bg-blue);
   color: white;
 }
 
@@ -110,7 +110,7 @@ body::after {
   width: 50px;
   height: 50px;
   position: absolute;
-  background-color: var(--bg-purple);
+  background-color: var(--bg-blue);
   box-shadow: var(--circle-shadow);
   border-radius: 50%;
   transition: 4s ease all;
@@ -134,7 +134,7 @@ body::after {
 button {
   padding: 8px 20px;
   border-radius: 8px;
-  background-color: var(--bg-purple);
+  background-color: var(--bg-blue);
   color: white;
   border: none;
   cursor: pointer;
@@ -145,7 +145,7 @@ button {
 
 button:hover {
   background: var(--bg-offwhite);
-  color: var(--bg-purple);
+  color: var(--bg-blue);
 }
 
 .button__wrapper {
