@@ -42,7 +42,7 @@ const breathingApp = () => {
     if (breathsLeft === 0) {
       clearInterval(breathingAnimation);
       instructions.style.color = "white";
-      instructions.innerText = "Bra jobbat, klicka 'Starta' för ny omgång";
+      instructions.innerText = "Bra jobbat, klicka på 'Starta' för ny omgång";
       start.classList.remove("button__inactive");
       breathsLeft = numberOfBreaths.value;
       breathsText.innerText = breathsLeft;
