@@ -1,4 +1,4 @@
-Techologies used: 
+Technologies used: 
 - HTML
 - CSS (including variables)
 - JavaScript
